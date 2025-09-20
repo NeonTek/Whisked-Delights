@@ -1,18 +1,15 @@
-console.log("Script loaded successfully.");
-document.addEventListener("DOMContentLoaded", () => {
-  const loader = document.querySelector("#preloader");
-  setTimeout(() => {
-    if (loader) loader.remove();
-  }, 4000)
-});
+// ✅ Wait until DOM is ready
+$(document).ready(function () {
+  // Fade out preloader after 4s
+  setTimeout(function () {
+    $("#preloader").fadeOut("slow", function () {
+      $(this).remove(); // remove after fadeOut completes
+    });
+  }, 4000);
 
-const hamburger = document.getElementById("hamburger-icon");
-const mobileMenu = document.getElementById("mobile-menu-container");
-
-hamburger.addEventListener("click", () => {
-  // Toggle the 'open' class on the hamburger icon for the 'X' animation
-  hamburger.classList.toggle("open");
-
-  // Toggle the 'show' class on the menu to make it appear/disappear
-  mobileMenu.classList.toggle("show");
+  // Hamburger menu toggle
+  $("#hamburger-icon").on("click", function () {
+    $(this).toggleClass("open"); // animate hamburger to X
+    $("#mobile-menu-container").toggleClass("show"); // show/hide menu
+  });
 });

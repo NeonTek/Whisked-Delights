@@ -45,7 +45,7 @@ body {
     --c1: #b8860b 96%, #0000;  /* golden glow */
     --c2: #8b0000 96%, #0000;  /* dark red */
     --c3: #ffffff 96%, #0000;  /* white highlight */
-    --c4: #000000 96%, #0000;  /* black base */
+    --c4: #333 96%, #0000;  /* black base */
     background:
         radial-gradient(farthest-side at 100% 100%, var(--c1)),
         radial-gradient(farthest-side at 0 100%, var(--c2)),
@@ -297,7 +297,7 @@ footer {
 }
 
 footer img {
-    max-width: 100%;
+    max-width: 120px;
     height: auto;
     display: inline-block;
 }
@@ -318,32 +318,17 @@ footer img {
     height: 40px;
     border-radius: 50%;
     background-color: transparent;
+    color: #fff;
+    text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.footer-socials a i,
-.footer-socials img,
-.footer-socials svg {
-    color: #fff !important;
-    fill: #fff !important;
-    width: 22px;
-    height: 22px;
-}
 
 .footer-socials a:hover {
     background-color: #D32F2F;
     transform: scale(1.1);
 }
 
-footer img,
-footer i,
-footer svg {
-    width: 24px;   /* smaller size */
-    height: 24px;
-    margin: 0 8px;
-    filter: brightness(0) invert(1); /* force white for all icons/images */
-    object-fit: contain;
-}
 
 @media (max-width: 480px) {
     footer img,
