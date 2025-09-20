@@ -1,4 +1,3 @@
-// ✅ Wait until DOM is ready
 $(document).ready(function () {
   // Fade out preloader after 4s
   setTimeout(function () {
