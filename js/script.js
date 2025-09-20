@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loader");
+  if (loader) loader.remove();
+});
+
 const hamburger = document.getElementById("hamburger-icon");
 const mobileMenu = document.getElementById("mobile-menu-container");
 
