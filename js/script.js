@@ -1,3 +1,4 @@
+console.log("Script loaded successfully.");
 document.addEventListener("DOMContentLoaded", () => {
   const loader = document.querySelector(".loader");
   setTimeout(() => {
