@@ -288,6 +288,34 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 2.2em;
 }
 
+/* Call-to-action buttons (always visible) */
+.btn-cta {
+    background-color: #8b0000; /* deep red background */
+    color: #fff;              /* white text for visibility */
+    border: 1px solid #8b0000;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+}
+
+/* Hover effect with golden glow */
+.btn-cta:hover {
+    background-color: #b8860b; /* gold on hover */
+    border-color: #b8860b;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Ensure the phone icon is aligned properly */
+.btn-cta i {
+    margin-right: 8px;
+}
+
+
 /* Footer */
 footer {
     background-color: #000;
