@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const loader = document.querySelector(".loader");
-  if (loader) loader.remove();
+  setTimeout(() => {
+    if (loader) loader.remove();
+  }, 3000)
 });
 
 const hamburger = document.getElementById("hamburger-icon");
