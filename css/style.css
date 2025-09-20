@@ -1,0 +1,478 @@
+/* General Body Styles & Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #800606e0;
+    color: #fff;
+    padding: 15px 5%;
+    position: fixed; /* Changed to fixed for better responsiveness */
+    width: 90%; /* Changed to % for better responsiveness */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #8006067e;
+}
+
+main {
+    padding-top: 70px; /* Added to prevent content from hiding under the fixed header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #D32F2F; /* Red for active and hover state */
+}
+
+/* Hero Section (Homepage) */
+.hero {
+    background: radial-gradient(
+    circle at top right,
+    #b8860b 0%,      /* golden glow */
+    #8b0000 40%,     /* deep dark red */
+    #000000 100%     /* fade to black */
+    );
+    background-image: url('../images/Golden\ Glow\ on\ Red\ Roses.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 5%;
+    color: #fff;
+    min-height: 85vh;
+}
+
+.hero-text {
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.hero-icon {
+    height: 50vh;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.btn-cta {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #D32F2F;
+    border-color: #D32F2F;
+}
+
+.hero-image {
+    margin-top: 15%;
+    flex-basis: 40%;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+}
+
+.hero-image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* General Page Content Styles */
+.content-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+/* Products Section */
+.products {
+    padding: 60px 5%;
+}
+
+.products h2, .products h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    text-align: center;
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.product-item span {
+    color: #555;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group button {
+    background-color: #D32F2F;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #333;
+}
+
+/* CTA Banner Section */
+.cta-banner {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.cta-banner h3 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.cta-banner p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+.cta-banner .btn-cta {
+    background-color: #D32F2F;
+    color: #fff;
+    border: 1px solid #D32F2F;
+    padding: 12px 30px;
+    font-weight: 500;
+}
+
+.cta-banner .btn-cta:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.cta-banner .btn-cta i {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #ccc;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #D32F2F;
+}
+
+.footer-socials {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+/* ------------------------- */
+/* --- HAMBURGER MENU --- */
+/* ------------------------- */
+
+/* Hamburger Icon Styling */
+#hamburger-icon {
+    display: none; /* Hidden by default on desktop */
+    cursor: pointer;
+    z-index: 2000; /* Ensures it's above other content */
+    position: relative;
+    width: 30px;
+    height: 22px;
+}
+
+#hamburger-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+/* The three lines of the hamburger */
+#hamburger-icon span:nth-child(1) { top: 0px; }
+#hamburger-icon span:nth-child(2) { top: 9px; }
+#hamburger-icon span:nth-child(3) { top: 18px; }
+
+/* 'X' Animation when active */
+#hamburger-icon.open span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg);
+}
+#hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+#hamburger-icon.open span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg);
+}
+
+/* Mobile Menu Container */
+.mobile-menu {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1500;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu.show {
+    display: flex; /* Show the menu */
+}
+
+.mobile-menu a {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-menu a:hover {
+    background-color: #D32F2F;
+}
+
+/* In the existing responsive styles, replace 'header nav' with '.main-nav' */
+@media (max-width: 768px) {
+    .main-nav { /* Instead of 'header nav' */
+        display: none; 
+    }
+
+    #hamburger-icon {
+        display: block; /* Show hamburger on tablets and smaller */
+    }
+
+    /* other tablet styles... */
+}
+
+/* ------------------------- */
+/* --- RESPONSIVE STYLES --- */
+/* ------------------------- */
+
+/* For Tablets and smaller devices */
+@media (max-width: 768px) {
+    header nav {
+        display: none; /* Hide nav menu on smaller screens */
+    }
+
+    .hero {
+        margin-top: -70px;
+        flex-direction: column; /* Stack hero content vertically */
+        text-align: center;
+        height: auto;
+        padding: 80px 5%;
+    }
+
+    .hero-text, .hero-image {
+        flex-basis: 100%; /* Make elements take full width */
+    }
+
+    .hero-text h1 {
+        font-size: 3em;
+    }
+
+    .product-item {
+        width: 45%; /* 2 items per row */
+    }
+
+    .content-section h2, .cta-banner h3 {
+        font-size: 2.2em;
+    }
+}
+
+/* For Mobile phones */
+@media (max-width: 480px) {
+    main {
+        padding-top: 60px; /* Adjust for smaller header */
+    }
+    
+    .logo span {
+        display: none; /* Hide text logo on very small screens */
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero-icon {
+        height: 30vh;
+    }
+
+    .product-item {
+        width: 90%; /* 1 item per row */
+    }
+
+    .content-section, .products, .cta-banner {
+        padding: 40px 5%;
+    }
+
+    .content-section h2, .cta-banner h3 {
+        font-size: 1.8em;
+    }
+
+    .footer-socials a {
+        margin: 0 5px;
+    }
+}
