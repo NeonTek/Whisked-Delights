@@ -1,9 +1,9 @@
 console.log("Script loaded successfully.");
 document.addEventListener("DOMContentLoaded", () => {
-  const loader = document.querySelector(".loader");
+  const loader = document.querySelector("#preloader");
   setTimeout(() => {
     if (loader) loader.remove();
-  }, 3000)
+  }, 4000)
 });
 
 const hamburger = document.getElementById("hamburger-icon");
