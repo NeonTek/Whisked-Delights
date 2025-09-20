@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#preloader").fadeOut("slow", function () {
       $(this).remove(); // remove after fadeOut completes
     });
-  }, 4000);
+  }, 5000);
 
   // Hamburger menu toggle
   $("#hamburger-icon").on("click", function () {
