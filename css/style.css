@@ -80,7 +80,7 @@ h3 { font-size: 1.8em; }
 
 /* Header & Navigation */
 header {
-    background-color: #800606e0;
+    background-color: #ff2c2ce0;
     color: #fff;
     padding: 15px 5%;
     position: fixed;
@@ -132,7 +132,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
-    color: #D32F2F;
+    color: #000000;
 }
 
 /* Hero Section (Homepage) */
@@ -143,7 +143,7 @@ nav ul li a:hover, nav ul li a.active {
     #8b0000 40%,     /* deep dark red */
     #000000 100%     /* fade to black */
     );
-    background-image: url('../images/Golden\ Glow\ on\ Red\ Roses.png');
+    background-image: url('../images/Hero.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
