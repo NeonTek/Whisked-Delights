@@ -290,9 +290,9 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Call-to-action buttons (always visible) */
 .btn-cta {
-    background-color: #8b0000; /* deep red background */
+    background-color: #c40502; /* deep red background */
     color: #fff;              /* white text for visibility */
-    border: 1px solid #8b0000;
+    border: 1px solid #c40502;
     padding: 10px 25px;
     text-decoration: none;
     margin-top: 15px;
