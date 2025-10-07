@@ -15,7 +15,14 @@
 </head>
 <body>
     <div id="preloader">
-       <div class="loader"></div> 
+        <lottie-player
+            src="https://neontek.github.io/Whisked-Delights/Party Cake.json"
+            background="transparent"
+            speed="0.8"
+            style="width: 80vw; height: 80vh; margin: auto;"
+            loop
+            autoplay>
+        </lottie-player>
     </div>
     <header>
         <div class="header-content">
@@ -87,7 +94,14 @@
             <a href="#"><i class="fab fa-facebook-f"></i></a> | <a href="#"><i class="fab fa-instagram"></i></a> | <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+    window.addEventListener("load", function() {
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+        }, 5000);
+    });
+    </script>
     <script src="https://neontek.github.io/Whisked-Delights/js/script.js"></script>
 </body>
 </html>
